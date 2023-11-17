@@ -48,3 +48,4 @@ output_image_path = f"scaled_{name}.png"
 scale_percent = 50  # Change this to the desired percentage
 
 scale_image(original, output_image_path, scale_percent)
+convertToPng()
