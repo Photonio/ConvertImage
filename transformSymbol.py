@@ -1,29 +1,9 @@
-# Convert:
-# https://search.brave.com/search?q=convert+webp+to+png+python&original=web
-# https://www.pycodemates.com/2023/10/webp-to-png-conversion-using-python.html
-
-# Scale:
-# https://cloudinary.com/guides/bulk-image-resize/python-image-resize-with-pillow-and-opencv
-
-# from: AI
-# https://chat.openai.com/share/7d24c939-08d3-4446-968e-61b397fc1dcd
-# https://chat.openai.com/c/fc923815-b652-48e9-b166-c318ea348d58
-
-# Doc
-# https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#jpeg
-
-# Quality
-# sch: https://www.google.com/search?q=python+pillow+save+jpeg+size, https://www.google.com/search?q=python+pillow+save+jpeg+smaller
-# https://jdhao.github.io/2019/07/20/pil_jpeg_image_quality/
-
-# OpenCV
-# https://cloudinary.com/guides/bulk-image-resize/python-image-resize-with-pillow-and-opencv
+original = "Original.webp"
 
 from pathlib import Path
 from PIL import Image # Open a WebP image
 
 
-original = "Pleiades.webp"
 name = original.split('.')[0]
 
 
@@ -59,3 +39,26 @@ scale_percent = 50  # Change this to the desired percentage
 
 convertToPng()
 #scale_image(original, output_image_path, scale_percent)
+
+# Convert:
+# https://search.brave.com/search?q=convert+webp+to+png+python&original=web
+# https://www.pycodemates.com/2023/10/webp-to-png-conversion-using-python.html
+
+# Scale:
+# https://cloudinary.com/guides/bulk-image-resize/python-image-resize-with-pillow-and-opencv
+
+# from: AI
+# https://chat.openai.com/share/7d24c939-08d3-4446-968e-61b397fc1dcd
+# https://chat.openai.com/c/fc923815-b652-48e9-b166-c318ea348d58
+
+# Doc
+# https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#jpeg
+
+# Quality
+# sch: https://www.google.com/search?q=python+pillow+save+jpeg+size, https://www.google.com/search?q=python+pillow+save+jpeg+smaller
+# https://jdhao.github.io/2019/07/20/pil_jpeg_image_quality/
+
+# OpenCV
+# https://cloudinary.com/guides/bulk-image-resize/python-image-resize-with-pillow-and-opencv
+
+
