@@ -10,10 +10,10 @@ name = original.split('.')[0]
 def convertToPng():
     webp_image = Image.open(original)
 
-    png_image = webp_image.convert("RGBA")
+    png_image = webp_image.convert("RGB") #"RGBA"
 
     try:
-        png_image = webp_image.convert("RGBA")
+        png_image = webp_image.convert("RGB")
         png_image.save(f"{name}.png", optimize=True, quality=100)
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -39,6 +39,11 @@ scale_percent = 50  # Change this to the desired percentage
 
 convertToPng()
 #scale_image(original, output_image_path, scale_percent)
+
+# sch: https://www.google.com/search?q=python+convert+webp+to+png+compress
+
+# Guide:
+# https://medium.com/@ajeet214/image-type-conversion-jpg-png-jpg-webp-png-webp-with-python-7d5df09394c9
 
 # Convert:
 # https://search.brave.com/search?q=convert+webp+to+png+python&original=web
