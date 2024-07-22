@@ -1,4 +1,4 @@
-original = "Original.webp"
+original = "original.webp"
 
 from pathlib import Path
 from PIL import Image # Open a WebP image
